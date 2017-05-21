@@ -1,0 +1,76 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		AC03539A1ED25A4C006FC1A0 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; name = src; path = ../src; sourceTree = "<group>"; };
+		AC03539B1ED25A54006FC1A0 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; name = include; path = ../include; sourceTree = "<group>"; };
+		AC03539D1ED25AF5006FC1A0 /* test */ = {isa = PBXFileReference; lastKnownFileType = folder; name = test; path = ../test; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		AC0353931ED259CD006FC1A0 = {
+			isa = PBXGroup;
+			children = (
+				AC03539D1ED25AF5006FC1A0 /* test */,
+				AC03539B1ED25A54006FC1A0 /* include */,
+				AC03539A1ED25A4C006FC1A0 /* src */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		AC0353941ED259CD006FC1A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+			};
+			buildConfigurationList = AC0353971ED259CD006FC1A0 /* Build configuration list for PBXProject "objective-osc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AC0353931ED259CD006FC1A0;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		AC0353981ED259CD006FC1A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		AC0353991ED259CD006FC1A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC0353971ED259CD006FC1A0 /* Build configuration list for PBXProject "objective-osc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0353981ED259CD006FC1A0 /* Debug */,
+				AC0353991ED259CD006FC1A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC0353941ED259CD006FC1A0 /* Project object */;
+}
