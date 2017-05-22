@@ -6,11 +6,43 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		AC03539E1ED27359006FC1A0 /* osc-tests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = AC03539F1ED27359006FC1A0 /* Build configuration list for PBXAggregateTarget "osc-tests" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = "osc-tests";
+			productName = "osc-tests";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		AC0353AA1ED29BE9006FC1A0 /* OSCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0353A91ED29BE9006FC1A0 /* OSCTests.m */; };
+		AC0353B01ED29C2B006FC1A0 /* MessageTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0353AF1ED29C2B006FC1A0 /* MessageTest.m */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		AC03539A1ED25A4C006FC1A0 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; name = src; path = ../src; sourceTree = "<group>"; };
 		AC03539B1ED25A54006FC1A0 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; name = include; path = ../include; sourceTree = "<group>"; };
 		AC03539D1ED25AF5006FC1A0 /* test */ = {isa = PBXFileReference; lastKnownFileType = folder; name = test; path = ../test; sourceTree = "<group>"; };
+		AC0353A61ED29BE9006FC1A0 /* OSCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC0353A91ED29BE9006FC1A0 /* OSCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSCTests.m; sourceTree = "<group>"; };
+		AC0353AB1ED29BE9006FC1A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC0353AF1ED29C2B006FC1A0 /* MessageTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MessageTest.m; path = ../../test/MessageTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC0353A31ED29BE9006FC1A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		AC0353931ED259CD006FC1A0 = {
@@ -19,16 +51,66 @@
 				AC03539D1ED25AF5006FC1A0 /* test */,
 				AC03539B1ED25A54006FC1A0 /* include */,
 				AC03539A1ED25A4C006FC1A0 /* src */,
+				AC0353A81ED29BE9006FC1A0 /* OSCTests */,
+				AC0353A71ED29BE9006FC1A0 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
+		AC0353A71ED29BE9006FC1A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC0353A61ED29BE9006FC1A0 /* OSCTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC0353A81ED29BE9006FC1A0 /* OSCTests */ = {
+			isa = PBXGroup;
+			children = (
+				AC0353AF1ED29C2B006FC1A0 /* MessageTest.m */,
+				AC0353A91ED29BE9006FC1A0 /* OSCTests.m */,
+				AC0353AB1ED29BE9006FC1A0 /* Info.plist */,
+			);
+			path = OSCTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC0353A51ED29BE9006FC1A0 /* OSCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC0353AC1ED29BE9006FC1A0 /* Build configuration list for PBXNativeTarget "OSCTests" */;
+			buildPhases = (
+				AC0353A21ED29BE9006FC1A0 /* Sources */,
+				AC0353A31ED29BE9006FC1A0 /* Frameworks */,
+				AC0353A41ED29BE9006FC1A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OSCTests;
+			productName = OSCTests;
+			productReference = AC0353A61ED29BE9006FC1A0 /* OSCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		AC0353941ED259CD006FC1A0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0820;
+				TargetAttributes = {
+					AC03539E1ED27359006FC1A0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					AC0353A51ED29BE9006FC1A0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = AC0353971ED259CD006FC1A0 /* Build configuration list for PBXProject "objective-osc" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -38,12 +120,37 @@
 				en,
 			);
 			mainGroup = AC0353931ED259CD006FC1A0;
+			productRefGroup = AC0353A71ED29BE9006FC1A0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				AC03539E1ED27359006FC1A0 /* osc-tests */,
+				AC0353A51ED29BE9006FC1A0 /* OSCTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC0353A41ED29BE9006FC1A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC0353A21ED29BE9006FC1A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0353AA1ED29BE9006FC1A0 /* OSCTests.m in Sources */,
+				AC0353B01ED29C2B006FC1A0 /* MessageTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
 		AC0353981ED259CD006FC1A0 /* Debug */ = {
@@ -58,6 +165,117 @@
 			};
 			name = Release;
 		};
+		AC0353A01ED27359006FC1A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AC0353A11ED27359006FC1A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AC0353AD1ED29BE9006FC1A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = OSCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stefansullivanmusic.OSCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AC0353AE1ED29BE9006FC1A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = OSCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stefansullivanmusic.OSCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -69,6 +287,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		AC03539F1ED27359006FC1A0 /* Build configuration list for PBXAggregateTarget "osc-tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0353A01ED27359006FC1A0 /* Debug */,
+				AC0353A11ED27359006FC1A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AC0353AC1ED29BE9006FC1A0 /* Build configuration list for PBXNativeTarget "OSCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0353AD1ED29BE9006FC1A0 /* Debug */,
+				AC0353AE1ED29BE9006FC1A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
